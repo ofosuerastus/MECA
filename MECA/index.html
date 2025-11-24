@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mighty Eagles College, Accra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color:#f3fbfc; color:#2a2b2d;">
+
+  <!-- Header -->
+  <div id="header"></div>
+ <script>
+    fetch("components/header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data)
+      .catch(err => console.error("Header load error:", err));
+  </script>
+
+
+<!-- Header -->
+  <div id="header"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-section position-relative">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="assets/images/grad2.jpg" class="d-block w-100 hero-img" alt="Campus view">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+            <h1 class="fw-bold display-5" style="font-size: 80px; margin-top: -30rem;">Welcome to Mighty Eagles College, Accra</h1>
+            <p class="lead" style="font-size: 30px;">Where excellence meets character and innovation.</p>
+            <a href="admissions.html" class="btn btn-apply mt-3">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="assets/images/grad1.jpg" class="d-block w-100 hero-img" alt="Students learning">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+            <h1 class="fw-bold display-5" style="font-size: 80px; margin-top: -30rem;">Empowering Tomorrow’s Leaders</h1>
+            <p class="lead" style="font-size: 30px;">Join a community that inspires learning and growth.</p>
+            <a href="academics.html" class="btn btn-apply mt-3">Explore Programs</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="assets/images/grad5.jpg" class="d-block w-100 hero-img" alt="School facilities">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+            <h1 class="fw-bold display-5" style="font-size: 80px; margin-top: -30rem;">Achieve Your Dreams with Us</h1>
+            <p class="lead" style="font-size: 30px;">Education that shapes the future — one student at a time.</p>
+            <a href="about.html" class="btn btn-apply mt-3">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-preview py-5 text-center">
+    <div class="container" style="width: 80vw; color: #606164;">
+        <h2 class="about-title fw-bold mb-4">About Mighty Eagles College, Accra</h2>
+        <p class="about-text mb-3">
+          At <strong>Mighty Eagles College</strong>, we are dedicated to shaping a brighter future through holistic education,
+          moral discipline, and innovation. Our college provides an environment where students are inspired to think critically,
+          act responsibly, and achieve excellence in every pursuit.
+        </p>
+        <p class="about-text">
+          We believe education should nurture character and creativity. Through modern teaching methods, dedicated faculty,
+          and a vibrant academic culture, we empower students to become confident leaders.
+        </p>
+        <a href="about.html" class="btn btn-learn mt-4">Learn More</a>
+      </div>
+  </section>
+
+  <!-- Academics Preview -->
+  <section class="academics-preview py-5">
+    <div class="container text-center">
+      <h2 class="section-title fw-bold mb-5">Our Programs</h2>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="academic-card h-100">
+            <div class="card-img-wrapper">
+              <img src="assets/images/DIT.jpg" class="img-fluid" alt="Science Department">
+            </div>
+            <div class="card-body mt-3">
+              <h5 class="card-title fw-bold">Information & Communication Technology</h5>
+              <p class="card-text">
+                Gain hands-on skills in computer applications, networking, and IT systems management. 
+              The course prepares you for roles in modern digital workplaces or to start your own tech venture.<br>
+                <a href="academics.html" class="btn btn-learn mt-4">Learn More</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="academic-card h-100">
+            <div class="card-img-wrapper">
+              <img src="assets/images/DBA.jpg" class="img-fluid" alt="Arts Department">
+            </div>
+            <div class="card-body mt-3">
+              <h5 class="card-title fw-bold">Business Administration</h5>
+              <p class="card-text">
+                Develop a strong foundation in business principles, management strategies, 
+              and entrepreneurship. This course prepares you to handle real-world challenges in finance, marketing, 
+              operations, and human resource management.<br>
+               <a href="academics.html" class="btn btn-learn mt-4">Learn More</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="academic-card h-100">
+            <div class="card-img-wrapper">
+              <img src="assets/images/DFDT.jpg" class="img-fluid" alt="Business Department">
+            </div>
+            <div class="card-body mt-3">
+              <h5 class="card-title fw-bold">Fashion and Design Technology</h5>
+              <p class="card-text">
+                Blend creativity with technical expertise in clothing design, pattern drafting, and garment production.
+                 Students learn both traditional and modern fashion design techniques relevant to the Ghanaian and global 
+                 market. <br>
+                <a href="academics.html" class="btn btn-learn mt-4">Learn More</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="news-section py-5">
+    <div class="container text-center">
+      <h2 class="section-title fw-bold mb-5" style="color: #0f2d69;">News & Events</h2>
+
+      <div class="news-card mb-3 clearfix shadow-sm mx-auto">
+        <img src="assets/images/grad2.jpg" class="float-start news-img me-4 mb-3" alt="Speech Day">
+        <div class="news-body text-start">
+          <span class="news-date d-block mb-2">November 22nd, 2024</span>
+          <h4 class="news-title fw-bold mb-3">2024/2025 Graduation Ceremony</h4>
+          <p class="news-text mb-3">
+            Mighty Eagles College celebrated its annual Graduation Ceremony, recognizing exceptional academic performance and community service.
+          </p>
+          <a href="news.html" class="btn btn-read">Read More</a>
+        </div>
+      </div>
+
+      <div class="news-card mb-3 clearfix shadow-sm mx-auto">
+        <img src="assets/images/grad5.jpg" class="float-end news-img ms-4 mb-3" alt="Science Fair">
+        <div class="news-body text-end">
+          <span class="news-date d-block mb-2">September 14, 2025</span>
+          <h4 class="news-title fw-bold mb-3">Annual Science & Innovation Fair</h4>
+          <p class="news-text mb-3">
+            Students exhibited creative projects in renewable energy, robotics, and digital technology — inspiring the next generation of innovators.
+          </p>
+          <a href="news.html" class="btn btn-read">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section py-5">
+    <div class="container-fluid text-center">
+      <h2 class="section-titlee fw-bold mb-4">Campus Gallery</h2>
+      <div class="gallery-wrapper">
+        <div class="gallery-track">
+          <img src="assets/images/grad1.jpg" alt="Gallery 1" class="gallery-img">
+          <img src="assets/images/grad2.jpg" alt="Gallery 2" class="gallery-img tall">
+          <img src="assets/images/grad10.jpg" alt="Gallery 3" class="gallery-img wide">
+          <img src="assets/images/grad7.jpg" alt="Gallery 4" class="gallery-img">
+          <img src="assets/images/grad11.jpg" alt="Gallery 5" class="gallery-img tall">
+          <img src="assets/images/grad8.jpg" alt="Gallery 3" class="gallery-img wide">
+          <img src="assets/images/grad9.jpg" alt="Gallery 4" class="gallery-img">
+          <img src="assets/images/grad5.jpg" alt="Gallery 5" class="gallery-img tall">
+          <img src="assets/images/grad6.jpg" alt="Gallery 6" class="gallery-img wide">
+          <img src="assets/images/grad2.jpg" alt="Gallery 6" class="gallery-img wide">
+          <img src="assets/images/grad3.jpg" alt="Gallery 6" class="gallery-img wide">
+          <img src="assets/images/grad6.jpg" alt="Gallery 6" class="gallery-img wide">
+          <img src="assets/images/grad6.jpg" alt="Gallery 6" class="gallery-img wide">
+        </div>
+      </div>
+    </div>
+
+   <!-- Modal -->
+      <div id="imgModal" class="img-modal">
+        <img id="modalImg" class="modal-content" alt="Gallery Image Preview">
+      </div>
+  </section>
+
+  <!-- Sponsors -->
+   <section class="sponsors py-5 text-center" style="background: #f8fafc; max-width: 100%; min-height: 40vh;">
+    <div class="container">
+      <h2 class="fw-bold mb-5 text-primary">Our Partners & Affiliates</h2>
+      <div class="row justify-content-center">
+        <div class="col-6 col-md-2"><img src="assets/images/COA.png" class="img-fluid p-3 rounded-4 shadow-sm" alt="Partner 1"></div>
+        <div class="col-6 col-md-2"><img src="assets/images/GES.png" class="img-fluid p-3 rounded-4 shadow-sm" alt="Partner 2"></div>
+        <div class="col-6 col-md-2"><img src="assets/images/GTEC.png" class="img-fluid p-3 rounded-4 shadow-sm" alt="Partner 3"></div>
+        <div class="col-6 col-md-2"><img src="assets/images/CTVET.png" class="img-fluid p-3 rounded-4 shadow-sm" alt="Partner 4"></div>
+        <div class="col-6 col-md-2"><img src="assets/images/WAEC.png" class="img-fluid p-3 rounded-4 shadow-sm" alt="Partner 4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Announcements -->
+  <section class="announcements-section py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5 text-primary">Latest Announcements</h2>
+      <div id="announcementCarousel" class="carousel slide carousel-fade mx-auto" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-4 overflow-hidden">
+          <div class="carousel-item active">
+            <img src="assets/images/ban1.png" class="d-block w-100 announcement-img" alt="Announcement 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/ban2.png" class="d-block w-100 announcement-img" alt="Announcement 2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    fetch("components/footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data)
+      .catch(err => console.error("Footer load error:", err));
+  </script>
+
+  <!-- Bootstrap JS (bottom for performance) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Page scripts -->
+  <script>
+
+    // Wait for page to fully load
+document.addEventListener("DOMContentLoaded", () => {
+  // Gallery Modal Logic
+  const images = document.querySelectorAll(".gallery-img");
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+
+  // If modal elements exist
+  if (modal && modalImg) {
+    // Open modal when image clicked
+    images.forEach(img => {
+      img.addEventListener("click", function () {
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+        document.body.style.overflow = "hidden"; // prevent scroll
+      });
+    });
+
+    // Close modal when clicking outside the image
+    modal.addEventListener("click", function (e) {
+      if (e.target !== modalImg) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto"; // restore scroll
+      }
+    });
+
+    // Add ESC key close support
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal.style.display === "flex") {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    });
+  }
+});
+    // gallery modal
+    document.addEventListener('click', function (e) {
+      if (e.target.matches('.gallery-img')) {
+        const modal = document.getElementById("imgModal");
+        const modalImg = document.getElementById("modalImg");
+        modalImg.src = e.target.src;
+        modal.style.display = "block";
+      }
+    });
+    document.getElementById("imgModal").addEventListener('click', function () { this.style.display = "none"; });
+
+    // responsive gallery behavior:
+    (function() {
+      const track = document.getElementById('galleryTrack');
+      let animId;
+      function startScroll() {
+        // only auto-scroll on wide screens
+        if (window.innerWidth >= 992 && track) {
+          let speed = 0.3; // px per frame
+          animId = requestAnimationFrame(function step() {
+            track.scrollLeft += speed;
+            // loop when reach end to create continuous scroll
+            if (track.scrollLeft >= (track.scrollWidth / 2)) {
+              track.scrollLeft = 0;
+            }
+            animId = requestAnimationFrame(step);
+          });
+        }
+      }
+      function stopScroll() {
+        if (animId) cancelAnimationFrame(animId);
+        animId = null;
+      }
+      window.addEventListener('resize', function() {
+        stopScroll(); startScroll();
+      });
+      // start on load
+      startScroll();
+      // pause on hover
+      track && track.addEventListener('mouseenter', stopScroll);
+      track && track.addEventListener('mouseleave', startScroll);
+    })();
+  </script>
+
+</body>
+</html>
